@@ -1,5 +1,11 @@
-const sum = require('./index');
+const { Cell } = require('./index');
 
-test('adds 1 + 2 to equal 3', () => {
-    expect(sum(1, 2)).toBe(4);
+test('Create default cell', () => {
+    const cell = new Cell();
+    expect(cell.state).toBe(true);
+});
+
+test('Create dead cell', () => {
+    const cell = new Cell(false);
+    expect(cell.state).toBe(false);
 });
