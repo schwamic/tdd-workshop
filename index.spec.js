@@ -1,6 +1,6 @@
 const { Cell } = require('./index');
 
-test('Create cell', () => {
+test('A new cell is alive', () => {
     const cell = new Cell();
     expect(cell.isAlive()).toBe(true);
 });
